@@ -1,5 +1,5 @@
 /*** SQL Exercises - SUBQUERIES on HR Database ***/
--- https://www.w3resource.com/sql-exercises/sql-subqueries-exercises.php
+
 
 Table: employees
 +-------------+-------------+-------------+----------+--------------------+------------+------------+----------+----------------+------------+---------------+
