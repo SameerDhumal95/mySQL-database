@@ -1,5 +1,5 @@
 /*** SQL Exercises - JOINS on HR Database***/
--- https://www.w3resource.com/sql-exercises/joins-hr/index.php
+
 
 Table: employees
 +-------------+-------------+-------------+----------+--------------------+------------+------------+----------+----------------+------------+---------------+
