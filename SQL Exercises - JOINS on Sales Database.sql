@@ -1,5 +1,5 @@
 /*** SQL Exercises - JOINS on Sales Database ***/
--- https://www.w3resource.com/sql-exercises/sql-joins-exercises.php
+
 
 Table: salesman
 
