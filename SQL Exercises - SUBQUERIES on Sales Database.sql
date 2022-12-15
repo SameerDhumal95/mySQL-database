@@ -1,5 +1,5 @@
 /*** SQL Exercises - SUBQUERIES on Sales Database ***/
--- https://www.w3resource.com/sql-exercises/subqueries/index.php
+
 
 Table: salesman
 
