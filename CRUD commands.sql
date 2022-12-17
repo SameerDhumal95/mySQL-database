@@ -45,7 +45,7 @@ drop table division;
 
 
 /*Truncate-Empty the table*/
-truncate division;
+truncate table division;
 
 
 
