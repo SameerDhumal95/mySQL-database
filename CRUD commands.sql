@@ -39,7 +39,7 @@ insert into division(div,schoolName) values(1,"r.z.p");
 
 
 /*Drop table*/
-drop division;
+drop table division;
 
 
 
