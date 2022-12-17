@@ -63,14 +63,16 @@ update emp set sal = 50000 where id = 1;
 select * from emp where id=1;
 
 
+
 /*Operators*/
 /*AND*/
+select * from emp where gender = 'M' and job = 'Manager';
 
 /*OR*/
+select * from emp where gender = 'M' or job = 'Manager';
 
-
-/*IN*/
-
+/*IN: multiple OR conditions*/  
+select * from emp where sal in(800,950,1250);
 
 /*LIKE*/
 /*starts with A and at least 5 charactor in length*/
