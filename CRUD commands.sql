@@ -118,3 +118,54 @@ select * from emp limit 5;
 select * from emp limit 5 offset 1;
 /*or using shortcut*/
 select * from emp limit 1,5;
+
+
+
+
+/*Aggrigate Functions*/
+select sum(sal) as "Total Sal" from emp;
+select avg(sal) as "Avg Sal" from emp;
+select max(sal) as "Max Sal" from emp;
+select min(sal) as "Min Sal" from emp;
+
+
+
+
+/*Update Query: WHERE claus is required because if we not used that will change all rows name*/
+update employee set ename="Vedika" where empId = 1002;
+
+
+
+
+/*Delete Query*/
+delete from employee where empId = 1005;
+
+
+
+
+/*JOIN*/
+/*it is used to retrive data from multiple tables*/
+/*INNER JOIN: is used to return those results that is exist between two tables*/
+select ename from emp INNER JOIN dept ON emp.deptno = dept.deptno;
+
+/*LEFT JOIN: returns all records from the left table ,and the matched records from the right table*/
+select * from teachers left join courses on teachers.tid=courses.tid;
+
+
+/*RIGHT JOIN: returns all records from the right table ,and the matched records from the left table*/
+select * from teachers right join courses on teachers.tid=courses.tid;
+
+
+/*CROSS JOIN: produce the result set which is the number of rows in the first thable multiplied by 
+the number of rows in second table if no where claues is used along with cross join*/
+select * from teachers cross join courses;
+
+
+/*SUB Query*/
+select name from students where cid = (select id from cities where name = 'Delhi');
+
+
+/*EXIST and NOT EXIST: vice versa*/
+select name from students where not exists (select id from cities where name = "Agra");
+
+select name from students where exists (select id from cities where name = "Agra");
