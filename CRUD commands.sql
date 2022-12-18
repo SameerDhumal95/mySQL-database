@@ -169,3 +169,18 @@ select name from students where cid = (select id from cities where name = 'Delhi
 select name from students where not exists (select id from cities where name = "Agra");
 
 select name from students where exists (select id from cities where name = "Agra");
+
+
+
+
+
+/*GROUP BY claues*/
+select tid, count(tid) from courses group by (tid);
+
+/*SYNTAX*/
+select column_name from table1 where condn group by column_name;
+
+
+
+/*HAVING claues*/
+select tid, count(tid) from courses group by (tid) having count(tid) = 2;
